@@ -1,0 +1,35 @@
+@import "blocks/fonts";
+
+//цвета
+$black: #191919;
+$greyLight: rgb(177, 174, 174);
+$grey: grey;
+
+//шрифты
+$montserratReg:'MontserratRegular', sans-serif;
+$montserratBold:'MontserratBold', sans-serif;
+$montserratBlack:'MontserratBlack', sans-serif;
+$montserratMed:'MontserratMedium', sans-serif;
+@mixin text($ff, $fz, $lh, $cr){
+    font-family: $ff;
+    font-size: $fz;
+    line-height: $lh;
+    color: $cr;
+}
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    text-decoration: none;
+    list-style: none;
+}
+.container{
+    width: 100%;
+    max-width: 1400px;
+    padding: 0 40px;
+    margin: 0 auto;
+}
+
+@import 'blocks/header';
+@import 'blocks/home'

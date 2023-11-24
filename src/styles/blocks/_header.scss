@@ -1,0 +1,40 @@
+.header{
+    &__nav{
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+    }
+    &__left{
+        display: flex;
+        align-items: center;
+        column-gap: 20px;
+    }
+    &__logo{
+        width: 60px;
+        height: 60px;
+    }
+    &__text{
+        display: flex;
+        flex-direction: column;
+        &-name{
+            @include text ($montserratBold, 35px, 40px, $black);
+        }
+        &-info{
+            // font-size: 20px;
+            // font-weight: 400;
+            // color: gray;
+            @include text ($montserratBold, 18px, 20px, $grey);
+        }
+    }
+    &__right{
+        display: flex;
+        column-gap: 40px;
+        &-cart,
+        &-favorite,
+        &-user{
+            width: 30px;
+            height: 30px;
+            color: gray;
+        }
+    }
+}

@@ -1,0 +1,78 @@
+.home{
+    margin-top: 40px;
+    &__promo{
+        width: 100%;
+    }
+    &__top{
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        margin: 40px 0 30px;
+    }
+    &__title{
+        @include text ($montserratBold, 30px, 16px, $black);
+    }
+    &__label{
+        display: flex;
+        flex-direction: column;
+        height: 60px;
+        @include text ($montserratReg, 20px, 30px, $black);
+    }
+    &__select{
+        @include text ($montserratReg, 20px, 15px, $black);
+        background: white;
+        border: 1px solid transparent;
+    }
+    &__option{
+        @include text ($montserratReg, 16px, 16px, $black);
+    }
+    
+    &__search{
+        display: flex;
+        justify-content: start;
+        align-items: center;
+        column-gap: 10px;
+        border: 1px solid $greyLight;
+        &-icon{
+            width: 20px;
+            margin-left: 10px;
+        }
+        &-input{
+            height: 50px;
+            padding-left: 10px;
+            border: 1px solid transparent;
+        }
+    }
+    &__products{
+        display: flex;
+        column-gap: 20px;
+        row-gap: 20px;
+        flex-wrap: wrap;
+    }
+    &__card{
+        width: calc(25% - 20px);
+        border: 1px solid $greyLight;
+        border-radius: 15px;
+        padding: 20px;
+        &-icon{
+            width: 30px;
+            height: 30px;
+            color: $grey;
+        }
+        &-image{
+            width: 100%;
+        }
+        &-title{
+            @include text ($montserratReg, 20px, 22px, $black);
+        }
+        &-text{
+            margin-right: 10px;
+            @include text ($montserratReg, 16px, 22px, $grey);
+        }
+        &-price, 
+        &-gender,
+        &-category{
+            @include text ($montserratReg, 18px, 22px, $black);
+        }
+    }
+}

@@ -1,0 +1,101 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <meta name="theme-color" content="#000000" />
+    <meta name="description" content="Web site created using create-react-app" />
+    <link rel="stylesheet" href="./src/styles/style.css">
+    <title>SneakerShop</title>
+</head>
+
+<body>
+    <header class='header'>
+        <div class='container'>
+            <nav class='header__nav'>
+                <div class='header__left'>
+                    <a>
+                        <img class='header__logo' src='./src/assets/images/logo.svg' alt='logo' />
+                    </a>
+                    <div class='header__text'>
+                        <h1 class='header__text-name'>SNEAKERS</h1>
+                        <p class='header__text-info'>Магазин лучших кроссовок</p>
+                    </div>
+                </div>
+                <ul class='header__right'>
+                        <li>
+                            <img class='header__right-cart' src="./src/assets/images/cart.svg" alt="cart">
+                        </li>
+                        <li>
+                            <img class='header__right-favorite' src="./src/assets/images/add-to-favourite.svg" alt="favorite">
+                        </li>
+                        <li>
+                            <img class='header__right-user' src="./src/assets/images/user.svg" alt="user">
+                        </li>
+                </ul>
+            </nav>
+        </div>
+    </header
+
+    <main>
+        <div class='container'>
+
+            <section class="home">
+                <img class="home__promo" src="./src/assets/images/promo.png" alt="promo">
+                <div class="home__top">
+                <h2 class="home__title">Все кроссовки</h2>
+                    <label class="home__label">Сортирока по цене
+                        <select class="home__select-price">
+                            <option class="home__option" value="">По умолчанию</option>
+                            <option min="0" class="home__option" value="desc">По убыванию</option>
+                            <option class="home__option" value="asc">По возрастанию</option>
+                        </select>
+                    </label>
+
+                    <label class="home__label">по категориям
+                        <select class="home__select-category">
+                            <option class="home__option" value="">По умолчанию</option>
+                            <option min="0" class="home__option" value="run">Для бега</option>
+                            <option class="home__option" value="street">Для прогулок</option>
+                            <option class="home__option" value="train">Для тренировок</option>
+                        </select>
+                    </label>
+
+                    <label class="home__label">по полу
+                        <select class="home__select-gender">
+                            <option class="home__option" value="">По умолчанию</option>
+                            <option min="0" class="home__option" value="men">Мужской</option>
+                            <option class="home__option" value="women">Женский</option>
+                        </select>
+                    </label>
+
+                    <label class="home__label">по бренду
+                        <select class="home__select-brand">
+                            <option class="home__option" value="">По умолчанию</option>
+                            <option min="0" class="home__option" value="GUCCI">GUCCI</option>
+                            <option class="home__option" value="Reebok">Reebok</option>
+                            <option class="home__option" value="Fila">Fila</option>
+                            <option class="home__option" value="Adidas">Adidas</option>
+                            <option class="home__option" value="PUMA">PUMA</option>
+                            <option class="home__option" value="Ecco">Ecco</option>
+                        </select>
+                    </label>
+
+                    <div class="home__search">
+                        <img class="home__search-icon" src="./src/assets/images/search.svg" alt="search">
+                        <input class="home__search-input" type="text" name="search" placeholder="Поиск..."/>
+                    </div>
+
+                </div>
+                <div class="home__products">
+                </div>
+            </section>
+
+        </div>
+    </main>    
+
+    <script src="./src/pages/home/home.js"></script>
+</body>
+
+</html>
