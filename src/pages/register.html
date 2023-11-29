@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="../styles/style.css">
+    <title>Register</title>
+</head>
+<body>
+    <header class='header'>
+        <div class='container'>
+            <nav class='header__nav'>
+                <a href="../../../index.html">
+                    <div class='header__left'>
+                        <img class='header__logo' src='../assets/images/logo.svg' alt='logo' />
+                        <div class='header__text'>
+                            <h1 class='header__text-name'>SNEAKERS</h1>
+                            <p class='header__text-info'>Магазин лучших кроссовок</p>
+                        </div>
+                    </div>
+                </a>
+                <ul class='header__right'>
+                        <li class="header__right-first">
+                            <div class="header__right-item">
+                                <img class='header__right-cart' src="../assets/images/cart.svg" alt="cart">
+                            </div>
+                            <p class='header__right-price'><span class="total">0</span> руб.</p>
+                        </li>
+                        <li class="header__right-item">
+                            <img class='header__right-favorite' src="../assets/images/add-to-favourite.svg" alt="favorite">
+                        </li>
+                        <li class="header__right-item">
+                            <img class='header__right-user' src="../assets/images/user.svg" alt="user">
+                        </li>
+                </ul>
+            </nav>
+        </div>
+    </header>
+
+    <div class="register">
+        <div class="container">
+            <form class="register__form">
+                <h2 class="register__title">Регистрация</h2>
+
+                <input class="register__input" type="text" name="login" placeholder="Login">
+                <input class="register__input" type="email" name="email" placeholder="Email address">
+                <input class="register__input" type="password" name="password" placeholder="Password">
+                <input class="register__input" type="password" name="password" placeholder="Confirm password">
+                
+                <button type="submit" class="register__btn">Зарегистрироваться</button>
+                <div class="register__block">
+                    <p class="register__block">Уже есть аккаунд?</p>
+                    <a href=""  class="register__link">Войти</a>
+                </div>
+
+            </form>
+        </div>
+    </div>
+    <script src="../js/user.js"></script>
+    <script src="../js/register.js "></script>
+</body>
+</html>

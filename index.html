@@ -14,29 +14,54 @@
     <header class='header'>
         <div class='container'>
             <nav class='header__nav'>
-                <div class='header__left'>
-                    <a>
+                <a href="../../../index.html">
+                    <div class='header__left'>
                         <img class='header__logo' src='./src/assets/images/logo.svg' alt='logo' />
-                    </a>
-                    <div class='header__text'>
-                        <h1 class='header__text-name'>SNEAKERS</h1>
-                        <p class='header__text-info'>Магазин лучших кроссовок</p>
+                        <div class='header__text'>
+                            <h1 class='header__text-name'>SNEAKERS</h1>
+                            <p class='header__text-info'>Магазин лучших кроссовок</p>
+                        </div>
                     </div>
-                </div>
+                </a>
                 <ul class='header__right'>
-                        <li>
-                            <img class='header__right-cart' src="./src/assets/images/cart.svg" alt="cart">
+                        <li class="header__right-first">
+                            <div class="header__right-item">
+                                <img class='header__right-cart' src="./src/assets/images/cart.svg" alt="cart">
+                            </div>
+                            <p class='header__right-price'><span class="total">0</span> руб.</p>
                         </li>
-                        <li>
+                        <li class="header__right-item">
                             <img class='header__right-favorite' src="./src/assets/images/add-to-favourite.svg" alt="favorite">
                         </li>
-                        <li>
+                        <li class="header__right-item">
                             <img class='header__right-user' src="./src/assets/images/user.svg" alt="user">
                         </li>
                 </ul>
             </nav>
         </div>
-    </header
+    </header>
+
+    <aside class="cart">
+        <div class="cart__block"></div>
+        <div class="cart__content">
+            <div>
+            <h2 class="cart__title">Корзина</h2>
+            <div class="cart__cards">
+            </div>
+            </div>
+            <div class="cart__bottom">
+                <div class="cart__info">
+                    <p class="cart__info-text">Итого:</p>
+                    <p class="cart__info-sum"><span class="total">0</span> руб.</p>
+                </div>
+                <div class="cart__info">
+                    <p class="cart__info-text">Налог 5%:</p>
+                    <p class="cart__info-sum"><span class="percent">0</span> руб.</p>
+                </div>
+                <button class="cart__btn">Оформить заказ</button>
+            </div>
+        </div>
+    </aside>
 
     <main>
         <div class='container'>
@@ -95,7 +120,8 @@
         </div>
     </main>    
 
-    <script src="./src/pages/home/home.js"></script>
+    <script src="./src/js/home.js"></script>
+    <script src="./src/pages/cart/cart.js"></script>
 </body>
 
 </html>

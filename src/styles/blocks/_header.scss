@@ -29,12 +29,32 @@
     &__right{
         display: flex;
         column-gap: 40px;
+        &-first{
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            column-gap: 5px;
+        }
+        &-item{
+            width: 40px;
+            height: 40px;
+        }
         &-cart,
         &-favorite,
         &-user{
             width: 30px;
             height: 30px;
             color: gray;
+            cursor: pointer;
+        }
+        &-cart:hover,
+        &-favorite:hover,
+        &-user:hover{
+            width: 35px;
+            height: 35px;
+        }
+        &-price{
+            @include text ($montserratBold, 18px, 20px, $black);
         }
     }
 }

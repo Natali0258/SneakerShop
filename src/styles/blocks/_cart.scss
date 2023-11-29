@@ -1,0 +1,96 @@
+.cart{
+    position:fixed;
+    width: 100%;
+    height: 100vh;
+    top: 0;
+    right: -100%;
+    transition: 2s;
+    display: flex;
+    &_active{
+        transform: translate(-100%);
+    }
+    &__block{
+        width: 78%;
+        background: rgba(10, 10, 10, 0.3);
+    }
+    &__content{
+        display: flex;
+        flex-direction: column;
+        justify-content: space-between;
+        width: 22%;
+        padding: 20px;
+        background: white;
+    }
+    &__title{
+        margin: 20px 0 20px;
+        @include text ($montserratBold, 30px, 16px, $black);
+    }
+    &__cards{
+        margin: 20px 0;
+        height: 70vh;
+        overflow-y: auto;
+        display: flex;
+        flex-direction: column;
+        row-gap: 10px;
+    }
+    &__card{
+        width: 100%;
+        border: 1px solid $greyLight;
+        border-radius: 15px;
+        padding: 20px;
+        display: flex;
+        align-items: center;
+        column-gap: 10px;
+        &-image{
+            width: 40%;
+        }
+        &-block{
+            display: flex;
+            flex-direction: column;
+            &-title{
+                margin-top: 20px;
+                @include text ($montserratReg, 14px, 18px, $black);
+            }
+            &-price{
+                margin-top: 10px;
+                @include text ($montserratBold, 16px, 16px, $black);
+            }
+        }
+        &-del{
+            width: 30px;
+            height: 30px;
+            padding: 2px 8px;
+            color: $grey;
+            border: 1px solid $grey;
+            border-radius: 8px;
+            font-weight: 700;
+            cursor: pointer;
+            &:hover{
+                transform: scale(1.2);
+            }
+        }
+    }
+    &__bottom{
+        display: flex;
+        flex-direction: column;
+        row-gap: 20px;
+    }
+    &__info{
+        display: flex;
+        justify-content: space-between;
+        &-text{
+            @include text ($montserratBold, 20px, 22px, $black);
+        }
+        &-sum{
+            @include text ($montserratBold, 20px, 22px, $black);
+        }
+    }
+    &__btn{
+        padding: 15px 0;
+        @include text ($montserratBold, 20px, 22px, white);
+        background: rgb(122, 192, 17);
+        border-radius: 20px;
+        border: none;
+        cursor: pointer;
+    }
+}

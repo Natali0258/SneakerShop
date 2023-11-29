@@ -10,6 +10,7 @@ $montserratReg:'MontserratRegular', sans-serif;
 $montserratBold:'MontserratBold', sans-serif;
 $montserratBlack:'MontserratBlack', sans-serif;
 $montserratMed:'MontserratMedium', sans-serif;
+$montserratSemiB:'MontserratSemiBold', sans-serif;
 @mixin text($ff, $fz, $lh, $cr){
     font-family: $ff;
     font-size: $fz;
@@ -32,4 +33,6 @@ $montserratMed:'MontserratMedium', sans-serif;
 }
 
 @import 'blocks/header';
-@import 'blocks/home'
+@import 'blocks/home';
+@import 'blocks/cart';
+@import 'blocks/register'
