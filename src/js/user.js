@@ -1,11 +1,16 @@
-let user={
+export let user={
     login:"",
     email:""
 }
 
-let formRegister=document.querySelector('.register__form');
+export const getUserFromLocalStorage=()=>{
+    if(localStorage.getItem('user')!==null){
+        user=JSON.parse(localStorage.getItem('user'))
+    }
+}
 
-formRegister.addEventListener('submit',(e)=>{
-    e.preventDefault()
-    console.log('123')
-})
+export const changeUser=(data)=>{
+    user={...data}
+    localStorage.setItem('user', JSON.stringify(user))
+    location.href='http://127.0.0.1:5500/index.html'
+}

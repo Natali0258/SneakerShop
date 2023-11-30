@@ -424,4 +424,72 @@
 }
 .register__link:hover {
   color: blue;
+}
+
+.login {
+  display: flex;
+  flex-direction: column;
+  margin: 0 auto;
+  padding: 20px auto;
+  height: 100vh;
+  width: 40%;
+}
+.login__form {
+  display: flex;
+  flex-direction: column;
+  margin-top: 40px;
+  row-gap: 20px;
+}
+.login__title {
+  margin-bottom: 10px;
+  font-family: "MontserratBold", sans-serif;
+  font-size: 30px;
+  line-height: 30px;
+  color: #191919;
+}
+.login__input {
+  width: 300px;
+  height: 45px;
+  border-radius: 20px;
+  padding-left: 20px;
+  font-family: "MontserratSemiBold", sans-serif;
+  font-size: 18px;
+  line-height: 18px;
+  color: #191919;
+}
+.login__btn {
+  width: 300px;
+  height: 45px;
+  margin-top: 10px;
+  border-radius: 20px;
+  padding: 10px 20px;
+  cursor: pointer;
+  background: rgb(48, 102, 218);
+  border: 1px solid rgb(48, 102, 218);
+  font-family: "MontserratBold", sans-serif;
+  font-size: 18px;
+  line-height: 18px;
+  color: white;
+}
+.login__btn:hover {
+  transform: scale(1.1);
+}
+.login__block {
+  display: flex;
+  align-items: center;
+  text-align: center;
+  font-family: "MontserratSemiBold", sans-serif;
+  font-size: 18px;
+  line-height: 18px;
+  color: #191919;
+}
+.login__link {
+  margin-left: 20px;
+  font-family: "MontserratBold", sans-serif;
+  font-size: 18px;
+  line-height: 18px;
+  color: #191919;
+}
+.login__link:hover {
+  color: blue;
 }/*# sourceMappingURL=style.css.map */

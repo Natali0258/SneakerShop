@@ -1,0 +1,54 @@
+.login{
+    display: flex;
+    flex-direction: column;
+    margin: 0 auto;
+    padding: 20px auto;
+    height: 100vh;
+    width: 40%;
+
+    &__form{
+        display: flex;
+        flex-direction: column;
+        margin-top: 40px;
+        row-gap: 20px;
+    }
+    &__title{
+        margin-bottom: 10px;
+        @include text ($montserratBold, 30px, 30px, $black);
+    }
+    &__input{
+        width: 300px;
+        height: 45px;
+        border-radius: 20px;
+        padding-left: 20px;
+        @include text ($montserratSemiB, 18px, 18px, $black);
+
+    }
+    &__btn{
+        width: 300px;
+        height: 45px;
+        margin-top: 10px;
+        border-radius: 20px;
+        padding: 10px 20px;
+        cursor: pointer;
+        background: rgb(48, 102, 218);
+        border: 1px solid rgb(48, 102, 218);
+        @include text ($montserratBold, 18px, 18px, white);
+        &:hover{
+            transform: scale(1.1);
+        }
+    }
+    &__block{
+        display: flex;
+        align-items: center;
+        text-align: center;
+        @include text ($montserratSemiB, 18px, 18px, $black);
+    }
+    &__link{
+        margin-left: 20px;
+        @include text ($montserratBold, 18px, 18px, $black);
+        &:hover{
+            color: blue;
+        }
+    }
+}

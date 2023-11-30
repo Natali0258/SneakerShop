@@ -1,113 +1,132 @@
 {
-    "users":[],
-    "products":[
-        {
-            "id": 1,
-            "title": "Женские кроссовки GUCCI",
-            "gender": "women",
-            "brand": "GUCCI",
-            "category": "street",
-            "price": 16999,
-            "image": "./src/assets/images/sneakersW-Gucci.png"
-        },
-        {
-            "id":2,
-            "title": "Женские кроссовки Reebok CLASSIC LEATHER",
-            "gender": "women",
-            "brand": "Reebok",
-            "category": "run",
-            "price": 13449,
-            "image": "./src/assets/images/sneakersW-Reebok.png"
-        },
-        {
-            "id":3,
-            "title": "Женские кроссовки Fila BACKBONE",
-            "gender": "women",
-            "brand": "Fila",
-            "category": "train",
-            "price": 8599,
-            "image": "./src/assets/images/sneakersW-Fila.png"
-        },
-        {
-            "id":4,
-            "title": "Женские кроссовки Adidas OZELIA",
-            "gender": "women",
-            "brand": "Adidas",
-            "category": "train",
-            "price": 15999,
-            "image": "./src/assets/images/sneakersW-Adidas.png"
-        },
-        {
-            "id":5,
-            "title": "Мужские кроссовки Reebok NANO X3",
-            "gender": "men",
-            "brand": "Reebok",
-            "category": "run",
-            "price": 17999,
-            "image": "./src/assets/images/sneakersM-Reebok.png"
-        },
-        {
-            "id":6,
-            "title": "Мужские кроссовки Reebok REEBOK GLIDE",
-            "gender": "men",
-            "brand": "Reebok",
-            "category": "street",
-            "price": 16999,
-            "image": "./src/assets/images/sneakersM-Reebok2.png"
-        },
-        {
-            "id":7,
-            "title": "Мужские кроссовки Fila BACKBONE",
-            "gender": "men",
-            "brand": "Fila",
-            "category": "street",
-            "price": 8599,
-            "image": "./src/assets/images/sneakersM-Fila.png"
-        },
-        {
-            "id":8,
-            "title": "Мужские кроссовки PUMA Milenio Tech",
-            "gender": "men",
-            "brand": "PUMA",
-            "category": "run",
-            "price": 16599,
-            "image": "./src/assets/images/sneakersM-Puma.png"
-        },
-        {
-            "id":9,
-            "title": "Мужские кроссовки PUMA X-Ray 2 Square",
-            "gender": "men",
-            "brand": "PUMA",
-            "category": "run",
-            "price": 15999,
-            "image": "./src/assets/images/sneakersM-Puma2.png"
-        },
-        {
-            "id":10,
-            "title": "Мужские кроссовки Ecco ULT-TRN M",
-            "gender": "men",
-            "brand": "Ecco",
-            "category": "train",
-            "price": 19990,
-            "image": "./src/assets/images/sneakersM-Ecco.png"
-        },
-        {
-            "id":11,
-            "title": "Мужские кроссовки Adidas TERREX AX4 BETA C.RDY",
-            "gender": "men",
-            "brand": "Adidas",
-            "category": "train",
-            "price": 15999,
-            "image": "./src/assets/images/sneakersM-Adidas.png"
-        },
-        {
-            "id":12,
-            "title": "Женские кроссовки Reebok CLASSIC LEATHER",
-            "gender": "women",
-            "brand": "Reebok",
-            "category": "train",
-            "price": 13499,
-            "image": "./src/assets/images/sneakersW-Reebok2.png"
-        }
-    ]
+  "users": [
+    {
+      "email": "nina@mail.ru",
+      "password": "$2a$10$Gccykn0MCd5GlDCJLIUK0.pPEME3A6uN6P.VFuBcmUZ71qIUc4a06",
+      "login": "Nina",
+      "id": 1
+    },
+    {
+      "email": "ivan@mail.ru",
+      "password": "$2a$10$74rqM9rqKvD8BA/muJewJe95VzvD3QK/Hv5pLrNHTj65BeXlM0lPC",
+      "login": "Ivan",
+      "id": 2
+    },
+    {
+      "email": "Olga@mail.ru",
+      "password": "$2a$10$KGy4vSyFPTboUbcNku44a.VmgAkggr7iX50OMXIiaCuWaUtNmu8NW",
+      "login": "Olga",
+      "id": 3
+    }
+  ],
+  "products": [
+    {
+      "id": 1,
+      "title": "Женские кроссовки GUCCI",
+      "gender": "women",
+      "brand": "GUCCI",
+      "category": "street",
+      "price": 16999,
+      "image": "./src/assets/images/sneakersW-Gucci.png"
+    },
+    {
+      "id": 2,
+      "title": "Женские кроссовки Reebok CLASSIC LEATHER",
+      "gender": "women",
+      "brand": "Reebok",
+      "category": "run",
+      "price": 13449,
+      "image": "./src/assets/images/sneakersW-Reebok.png"
+    },
+    {
+      "id": 3,
+      "title": "Женские кроссовки Fila BACKBONE",
+      "gender": "women",
+      "brand": "Fila",
+      "category": "train",
+      "price": 8599,
+      "image": "./src/assets/images/sneakersW-Fila.png"
+    },
+    {
+      "id": 4,
+      "title": "Женские кроссовки Adidas OZELIA",
+      "gender": "women",
+      "brand": "Adidas",
+      "category": "train",
+      "price": 15999,
+      "image": "./src/assets/images/sneakersW-Adidas.png"
+    },
+    {
+      "id": 5,
+      "title": "Мужские кроссовки Reebok NANO X3",
+      "gender": "men",
+      "brand": "Reebok",
+      "category": "run",
+      "price": 17999,
+      "image": "./src/assets/images/sneakersM-Reebok.png"
+    },
+    {
+      "id": 6,
+      "title": "Мужские кроссовки Reebok REEBOK GLIDE",
+      "gender": "men",
+      "brand": "Reebok",
+      "category": "street",
+      "price": 16999,
+      "image": "./src/assets/images/sneakersM-Reebok2.png"
+    },
+    {
+      "id": 7,
+      "title": "Мужские кроссовки Fila BACKBONE",
+      "gender": "men",
+      "brand": "Fila",
+      "category": "street",
+      "price": 8599,
+      "image": "./src/assets/images/sneakersM-Fila.png"
+    },
+    {
+      "id": 8,
+      "title": "Мужские кроссовки PUMA Milenio Tech",
+      "gender": "men",
+      "brand": "PUMA",
+      "category": "run",
+      "price": 16599,
+      "image": "./src/assets/images/sneakersM-Puma.png"
+    },
+    {
+      "id": 9,
+      "title": "Мужские кроссовки PUMA X-Ray 2 Square",
+      "gender": "men",
+      "brand": "PUMA",
+      "category": "run",
+      "price": 15999,
+      "image": "./src/assets/images/sneakersM-Puma2.png"
+    },
+    {
+      "id": 10,
+      "title": "Мужские кроссовки Ecco ULT-TRN M",
+      "gender": "men",
+      "brand": "Ecco",
+      "category": "train",
+      "price": 19990,
+      "image": "./src/assets/images/sneakersM-Ecco.png"
+    },
+    {
+      "id": 11,
+      "title": "Мужские кроссовки Adidas TERREX AX4 BETA C.RDY",
+      "gender": "men",
+      "brand": "Adidas",
+      "category": "train",
+      "price": 15999,
+      "image": "./src/assets/images/sneakersM-Adidas.png"
+    },
+    {
+      "id": 12,
+      "title": "Женские кроссовки Reebok CLASSIC LEATHER",
+      "gender": "women",
+      "brand": "Reebok",
+      "category": "train",
+      "price": 13499,
+      "image": "./src/assets/images/sneakersW-Reebok2.png"
+    }
+  ]
 }

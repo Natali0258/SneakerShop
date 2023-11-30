@@ -1,3 +1,8 @@
+import { getUserFromLocalStorage } from "./user.js";
+
+getUserFromLocalStorage();
+
+
 let url='http://localhost:8080/products?';
 
 let cartData=[];

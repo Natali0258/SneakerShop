@@ -2,18 +2,17 @@ import { changeUser, getUserFromLocalStorage } from "./user.js";
 
 getUserFromLocalStorage()
 
-let formRegister=document.querySelector('.register__form');
+let formLogin=document.querySelector('.login__form');
 
-formRegister.addEventListener('submit',(e)=>{
+formLogin.addEventListener('submit',(e)=>{
     e.preventDefault()
 
     const userData={
-        login: e.target[0].value,
-        email: e.target[1].value,
-        password: e.target[2].value
+        email: e.target[0].value,
+        password: e.target[1].value
     }
 
-    fetch('http://localhost:8080/users', {
+    fetch('http://localhost:8080/signin', {
         method:'POST',
         headers:{
             "Content-Type": "application/json"
@@ -21,11 +20,11 @@ formRegister.addEventListener('submit',(e)=>{
         body: JSON.stringify(userData)
     }).then(response=>response.json())
     .then(response=>{
-        alert('Пользователь зарегистрирован')
+        alert('Вход в аккаунт')
         changeUser({
             ...response.user,
             token: response.accessToken
         })
     })
-    .catch(()=>alert('Аккаунт не создан'))
+    .catch(err=>alert(err))
 })
