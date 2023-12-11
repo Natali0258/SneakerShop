@@ -14,9 +14,15 @@
     },
     {
       "email": "Olga@mail.ru",
-      "password": "$2a$10$KGy4vSyFPTboUbcNku44a.VmgAkggr7iX50OMXIiaCuWaUtNmu8NW",
+      "password": "$2a$10$7xRAxyWwtLu7CWWhAWMsYeDlWLCJV8hfzb2cD4.7lBlq8u1JPrmAi",
       "login": "Olga",
       "id": 3
+    },
+    {
+      "email": "Elena@mail.ru",
+      "password": "$2a$10$Cf5nM6cdAC1/b8n317O9Se7sMZq5hDQAlm/k089idNZdzTGr7CVKK",
+      "login": "Elena",
+      "id": 4
     }
   ],
   "products": [
@@ -27,7 +33,7 @@
       "brand": "GUCCI",
       "category": "street",
       "price": 16999,
-      "image": "./src/assets/images/sneakersW-Gucci.png"
+      "image": "http://127.0.0.1:5500/src/assets/images/sneakersW-Gucci.png"
     },
     {
       "id": 2,
@@ -36,7 +42,7 @@
       "brand": "Reebok",
       "category": "run",
       "price": 13449,
-      "image": "./src/assets/images/sneakersW-Reebok.png"
+      "image": "http://127.0.0.1:5500/src/assets/images/sneakersW-Reebok.png"
     },
     {
       "id": 3,
@@ -45,7 +51,7 @@
       "brand": "Fila",
       "category": "train",
       "price": 8599,
-      "image": "./src/assets/images/sneakersW-Fila.png"
+      "image": "http://127.0.0.1:5500/src/assets/images/sneakersW-Fila.png"
     },
     {
       "id": 4,
@@ -54,7 +60,7 @@
       "brand": "Adidas",
       "category": "train",
       "price": 15999,
-      "image": "./src/assets/images/sneakersW-Adidas.png"
+      "image": "http://127.0.0.1:5500/src/assets/images/sneakersW-Adidas.png"
     },
     {
       "id": 5,
@@ -63,7 +69,7 @@
       "brand": "Reebok",
       "category": "run",
       "price": 17999,
-      "image": "./src/assets/images/sneakersM-Reebok.png"
+      "image": "http://127.0.0.1:5500/src/assets/images/sneakersM-Reebok.png"
     },
     {
       "id": 6,
@@ -72,7 +78,7 @@
       "brand": "Reebok",
       "category": "street",
       "price": 16999,
-      "image": "./src/assets/images/sneakersM-Reebok2.png"
+      "image": "http://127.0.0.1:5500/src/assets/images/sneakersM-Reebok2.png"
     },
     {
       "id": 7,
@@ -81,7 +87,7 @@
       "brand": "Fila",
       "category": "street",
       "price": 8599,
-      "image": "./src/assets/images/sneakersM-Fila.png"
+      "image": "http://127.0.0.1:5500/src/assets/images/sneakersM-Fila.png"
     },
     {
       "id": 8,
@@ -90,7 +96,7 @@
       "brand": "PUMA",
       "category": "run",
       "price": 16599,
-      "image": "./src/assets/images/sneakersM-Puma.png"
+      "image": "http://127.0.0.1:5500/src/assets/images/sneakersM-Puma.png"
     },
     {
       "id": 9,
@@ -99,7 +105,7 @@
       "brand": "PUMA",
       "category": "run",
       "price": 15999,
-      "image": "./src/assets/images/sneakersM-Puma2.png"
+      "image": "http://127.0.0.1:5500/src/assets/images/sneakersM-Puma2.png"
     },
     {
       "id": 10,
@@ -108,7 +114,7 @@
       "brand": "Ecco",
       "category": "train",
       "price": 19990,
-      "image": "./src/assets/images/sneakersM-Ecco.png"
+      "image": "http://127.0.0.1:5500/src/assets/images/sneakersM-Ecco.png"
     },
     {
       "id": 11,
@@ -117,7 +123,7 @@
       "brand": "Adidas",
       "category": "train",
       "price": 15999,
-      "image": "./src/assets/images/sneakersM-Adidas.png"
+      "image": "http://127.0.0.1:5500/src/assets/images/sneakersM-Adidas.png"
     },
     {
       "id": 12,
@@ -126,7 +132,7 @@
       "brand": "Reebok",
       "category": "train",
       "price": 13499,
-      "image": "./src/assets/images/sneakersW-Reebok2.png"
+      "image": "http://127.0.0.1:5500/src/assets/images/sneakersW-Reebok2.png"
     }
   ]
 }

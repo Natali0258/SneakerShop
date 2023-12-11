@@ -1,0 +1,102 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <meta name="theme-color" content="#000000" />
+    <meta name="description" content="Web site created using create-react-app" />
+    <link rel="stylesheet" href="../styles/style.css">
+    <title>SneakerShop</title>
+</head>
+
+<body>
+    <header class='header'>
+        <div class='container'>
+            <nav class='header__nav'>
+                <a href="../../index.html">
+                    <div class='header__left'>
+                        <img class='header__logo' src='../assets/images/logo.svg' alt='logo' />
+                        <div class='header__text'>
+                            <h1 class='header__text-name'>SNEAKERS</h1>
+                            <p class='header__text-info'>Магазин лучших кроссовок</p>
+                        </div>
+                    </div>
+                </a>
+                <ul class='header__right'>
+                    <li class="header__right-first">
+                        <div class="header__right-item">
+                            <img class='header__right-cart' src="../assets/images/cart.svg" alt="cart">
+                        </div>
+                        <p class='header__right-price'><span class="total">0</span> руб.</p>
+                    </li>
+                    <li class="header__right-item">
+                        <!-- <a href="./src/pages/favorite.html"> -->
+                            <img class="header__right-favorite" src="../assets/images/favorite_white.svg" alt="favorite">
+                        <!-- </a> -->
+                    </li>
+                    <li class="header__right-next">
+                        <img class="header__right-user" src="../assets/images/user.svg" alt="user">
+                        <div class="header__right-item">
+                                <button class="header__right-entry">Вход</button>
+                                <button class="header__right-exit">Выход</button> 
+                        </div>
+                    </li>
+                </ul>
+            </nav>
+        </div>
+    </header>
+
+    <aside class="cart">
+        <div class="cart__block"></div>
+        <div class="cart__content">
+            <div>
+            <h2 class="cart__title">Корзина</h2>
+            <div class="cart__cards">
+            </div>
+            </div>
+            <div class="cart__bottom">
+                <div class="cart__info">
+                    <p class="cart__info-text">Итого:</p>
+                    <p class="cart__info-sum"><span class="total">0</span> руб.</p>
+                </div>
+                <div class="cart__info">
+                    <p class="cart__info-text">Налог 5%:</p>
+                    <p class="cart__info-sum"><span class="percent">0</span> руб.</p>
+                </div>
+                <button class="cart__btn">Оформить заказ</button>
+            </div>
+        </div>
+    </aside>
+
+    <main>
+        <div class='container'>
+
+            <section class="favorite">
+                <h2 class="favorite__title">Мои закладки</h2>
+
+                <div class="favorite__products">
+                </div>
+
+                <div class="favorite__none">
+                    <h3 class="favorite__none-title">Закладок нет:(((</h3>
+                    <p class="favorite__none-text">Вы ничего не добавляли в закладки</p>
+                    <a href="../../index.html">
+                        <button class="favorite__none-btn btn">&#8592;<span style="margin-left: 15px;">Вернуться назад</span></button>
+                    </a>
+                </div>
+                
+            </section>
+
+        </div>
+    </main>    
+
+    <script type="module" src="../js/favoritePage.js"></script>
+    <script type="module" src="../js/favorite.js"></script>
+    <script type="module" src="../js/cart.js"></script>
+    <script type="module" src="../js/viewContent.js"></script>
+    <script type="module" src="../js/user.js"></script>
+    
+</body>
+
+</html>

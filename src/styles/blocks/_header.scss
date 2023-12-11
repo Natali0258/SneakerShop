@@ -20,41 +20,72 @@
             @include text ($montserratBold, 35px, 40px, $black);
         }
         &-info{
-            // font-size: 20px;
-            // font-weight: 400;
-            // color: gray;
             @include text ($montserratBold, 18px, 20px, $grey);
         }
     }
     &__right{
         display: flex;
-        column-gap: 40px;
-        &-first{
+        align-items: center;
+        column-gap: 30px;
+        &-first,
+        &-next{
             display: flex;
             justify-content: center;
             align-items: center;
             column-gap: 5px;
         }
         &-item{
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            width: 50px;
+            height: 35px;
+        }
+        &-cart{
+            width: 35px;
+            height: 35px;
+            color: gray;
+            cursor: pointer;
+        }
+        &-cart:hover{
             width: 40px;
             height: 40px;
         }
-        &-cart,
-        &-favorite,
-        &-user{
+        &-price{
+            @include text ($montserratBold, 18px, 20px, $black);
+        }
+
+        &-favorite{
             width: 30px;
             height: 30px;
             color: gray;
             cursor: pointer;
         }
-        &-cart:hover,
-        &-favorite:hover,
-        &-user:hover{
+        &-favorite:hover{
             width: 35px;
             height: 35px;
         }
-        &-price{
-            @include text ($montserratBold, 18px, 20px, $black);
+
+        &-user{
+            width: 30px;
+            height: 30px;
+            color: gray;
+        }
+        &-entry,
+        &-exit{
+            display: none;
+            &_active{
+                display: block;
+                margin-left: 10px;
+                @include text ($montserratBold, 18px, 20px, $black);
+                background: white;
+                border: none;
+                cursor: pointer;
+            }
+        }
+        &-entry:hover,
+        &-exit:hover{
+            @include text ($montserratBold, 20px, 20px, blue);
         }
     }
 }

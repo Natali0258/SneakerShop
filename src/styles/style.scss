@@ -4,6 +4,7 @@
 $black: #191919;
 $greyLight: rgb(177, 174, 174);
 $grey: grey;
+$green: rgb(122, 192, 17);
 
 //шрифты
 $montserratReg:'MontserratRegular', sans-serif;
@@ -31,9 +32,21 @@ $montserratSemiB:'MontserratSemiBold', sans-serif;
     padding: 0 40px;
     margin: 0 auto;
 }
+.btn{
+    width: 300px;
+    height: 45px;
+    margin-top: 10px;
+    border-radius: 20px;
+    padding: 10px 20px;
+    cursor: pointer;
+    background: rgb(48, 102, 218);
+    border: 1px solid rgb(48, 102, 218);
+    @include text ($montserratBold, 18px, 18px, white);
+}
 
 @import 'blocks/header';
 @import 'blocks/home';
 @import 'blocks/cart';
 @import 'blocks/register';
-@import 'blocks/login'
+@import 'blocks/login';
+@import 'blocks/favorite'

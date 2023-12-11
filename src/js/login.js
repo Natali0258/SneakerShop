@@ -1,4 +1,10 @@
-import { changeUser, getUserFromLocalStorage } from "./user.js";
+import { changeUser, getUserFromLocalStorage} from "./user.js";
+
+const chooseActiveEntry=()=>{
+    let userEntryBtn=document.querySelector('.header__right-entry');
+    userEntryBtn.classList.add('header__right-entry_active');
+}
+chooseActiveEntry()
 
 getUserFromLocalStorage()
 
@@ -20,11 +26,17 @@ formLogin.addEventListener('submit',(e)=>{
         body: JSON.stringify(userData)
     }).then(response=>response.json())
     .then(response=>{
-        alert('Вход в аккаунт')
         changeUser({
             ...response.user,
             token: response.accessToken
         })
+        if(response.accessToken){
+        location.href='http://127.0.0.1:5500/index.html'
+        }else{
+            alert('Логин или пороль с ошибкой. Повторите вход в аккаут.')
+            location.href='http://127.0.0.1:5500/src/pages/login.html'
+        }
+        
     })
     .catch(err=>alert(err))
 })

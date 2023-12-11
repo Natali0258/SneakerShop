@@ -1,46 +1,26 @@
-.home{
+.favorite{
     margin-top: 40px;
-    &__promo{
-        width: 100%;
-    }
-    &__top{
-        display: flex;
-        justify-content: space-between;
-        align-items: center;
-        margin: 40px 0 30px;
-    }
     &__title{
-        @include text ($montserratBold, 30px, 16px, $black);
+        margin-bottom: 30px;
+        @include text ($montserratBold, 30px, 30px, $black);
     }
-    &__label{
+    &__none{
         display: flex;
         flex-direction: column;
-        height: 60px;
-        @include text ($montserratReg, 20px, 30px, $black);
-    }
-    &__select{
-        @include text ($montserratReg, 20px, 15px, $black);
-        background: white;
-        border: 1px solid transparent;
-    }
-    &__option{
-        @include text ($montserratReg, 16px, 16px, $black);
-    }
-    
-    &__search{
-        display: flex;
-        justify-content: start;
         align-items: center;
-        column-gap: 10px;
-        border: 1px solid $greyLight;
-        &-icon{
-            width: 20px;
-            margin-left: 10px;
+        margin: 100px auto;
+        height: 100vh;
+        width: 40%;
+        row-gap: 30px;
+        &-title{
+            @include text ($montserratBold, 24px, 24px, $black);
         }
-        &-input{
-            height: 50px;
-            padding-left: 10px;
-            border: 1px solid transparent;
+        &-text{
+            @include text ($montserratSemiB, 20px, 20px, $black);
+        }
+        &-btn{
+            background: $green;
+            border: 1px solid $green;
         }
     }
     &__products{
@@ -105,7 +85,7 @@
                 cursor: pointer;
             }
             &_active{
-                background: $green;
+                background: rgb(122, 192, 17);
                 width: 30px;
                 height: 30px;
                 padding: 4px;

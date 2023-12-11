@@ -1,5 +1,11 @@
 import { changeUser, getUserFromLocalStorage } from "./user.js";
 
+const chooseActiveEntry=()=>{
+    let userEntryBtn=document.querySelector('.header__right-entry');
+    userEntryBtn.classList.add('header__right-entry_active');
+}
+chooseActiveEntry()
+
 getUserFromLocalStorage()
 
 let formRegister=document.querySelector('.register__form');
@@ -26,6 +32,11 @@ formRegister.addEventListener('submit',(e)=>{
             ...response.user,
             token: response.accessToken
         })
+        // let entry=document.querySelector('.header__right-entry');
+        // entry.classList.remove('header__right-entry_active');
+        // let exit=document.querySelector('.header__right-exit');
+        // exit.classList.add('header__right-exit_active');
+        chooseActiveBtn()
     })
     .catch(()=>alert('Аккаунт не создан'))
 })
