@@ -1,3 +1,4 @@
+import { favoriteData } from "./favorite.js";
 
 export let cartData=[];
 
@@ -7,6 +8,8 @@ let cartCards=document.querySelector('.cart__cards');
 let cartDarkBlock=document.querySelector('.cart__block');
 let totalCart=document.querySelectorAll('.total');
 let percentCart=document.querySelector('.percent');
+let countCart=document.querySelector('.count-cart');
+let countFavorite=document.querySelector('.count-favorite');
 
 export const setLocalStorage=()=>{
     localStorage.setItem('cart', JSON.stringify(cartData))
@@ -60,6 +63,8 @@ export const getCart=()=>{
     percentCart.textContent=Math.ceil(cartData.reduce((acc,res)=>{
         return acc+res.price
     },0)/100*5)
+    countCart.textContent=cartData.length;
+    countFavorite.textContent=favoriteData.length;
 
     
     let removeCartBtns=document.querySelectorAll('.removeCart');

@@ -1,5 +1,6 @@
 .header{
     &__nav{
+        margin-top: 20px;
         display: flex;
         justify-content: space-between;
         align-items: center;
@@ -38,8 +39,9 @@
             display: flex;
             justify-content: center;
             align-items: center;
-            width: 50px;
-            height: 35px;
+            width: 70px;
+            height: 50px;
+            position: relative;
         }
         &-cart{
             width: 35px;
@@ -50,6 +52,19 @@
         &-cart:hover{
             width: 40px;
             height: 40px;
+        }
+        &-circle{
+            width: 25px;
+            height: 25px;
+            border-radius: 50%;
+            background: red;
+            position: absolute;
+            top: -3px;
+            left: 40px;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            @include text ($montserratBold, 16px, 16px, white);
         }
         &-price{
             @include text ($montserratBold, 18px, 20px, $black);

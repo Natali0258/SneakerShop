@@ -1,4 +1,4 @@
-import { changeUser, getUserFromLocalStorage } from "./user.js";
+import { changeUser, getUserFromLocalStorage,user } from "./user.js";
 
 const chooseActiveEntry=()=>{
     let userEntryBtn=document.querySelector('.header__right-entry');
@@ -27,16 +27,12 @@ formRegister.addEventListener('submit',(e)=>{
         body: JSON.stringify(userData)
     }).then(response=>response.json())
     .then(response=>{
-        alert('Пользователь зарегистрирован')
         changeUser({
             ...response.user,
             token: response.accessToken
         })
-        // let entry=document.querySelector('.header__right-entry');
-        // entry.classList.remove('header__right-entry_active');
-        // let exit=document.querySelector('.header__right-exit');
-        // exit.classList.add('header__right-exit_active');
-        chooseActiveBtn()
+        alert('Пользователь зарегистрирован');
+        location.href='http://127.0.0.1:5500/index.html'
     })
     .catch(()=>alert('Аккаунт не создан'))
 })

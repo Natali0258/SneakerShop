@@ -1,4 +1,4 @@
-import { getUserFromLocalStorage } from "./user.js";
+import { getUserFromLocalStorage,user } from "./user.js";
 import { getCart } from "./cart.js";
 import { viewContent } from "./viewContent.js";
 
@@ -12,13 +12,14 @@ let selectCategory=document.querySelector('.home__select-category');
 let selectGender=document.querySelector('.home__select-gender');
 let selectBrand=document.querySelector('.home__select-brand');
 let search=document.querySelector('.home__search-input');
-let user=document.querySelector('.header__right-user');
+//let user=document.querySelector('.header__right-user');
 let userEntryBtn=document.querySelector('.header__right-entry');
 let userExitBtn=document.querySelector('.header__right-exit');
 
 //Переключение кнопки Вход/Выход
 export const chooseActiveBtn=()=>{
-    if (user !== null) {
+    // if (user !== null) {
+    if (user.login !== "" && user.email !== "") {
         userExitBtn.classList.add('header__right-exit_active');
         userEntryBtn.classList.remove('header__right-entry_active');
     } else {

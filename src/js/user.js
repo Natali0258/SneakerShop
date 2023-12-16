@@ -11,6 +11,7 @@ export const getUserFromLocalStorage=()=>{
 
 export const changeUser=(data)=>{
     user={...data}
+    console.log('USER=',user)
     localStorage.setItem('user', JSON.stringify(user))
     location.href='http://127.0.0.1:5500/index.html'
 }
