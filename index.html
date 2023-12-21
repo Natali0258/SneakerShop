@@ -34,7 +34,7 @@
                         <li class="header__right-item">
                             <a href="http://127.0.0.1:5500/src/pages/favorite.html">
                                 <img class="header__right-favorite" src="./src/assets/images/favorite_white.svg" alt="favorite">
-                                <div class="header__right-circle"><span class="count-favorite">0</span></div>
+                                <div class="header__right-round"><span class="count-favorite">0</span></div>
                             </a>
                         </li>
                         <li class="header__right-next">
@@ -77,8 +77,9 @@
             <section class="home">
                 <img class="home__promo" src="./src/assets/images/promo.png" alt="promo">
                 <div class="home__top">
-                <h2 class="home__title">Все кроссовки</h2>
-                    <label class="home__label">Сортирока по цене
+                    <h2 class="home__title">Все кроссовки</h2>
+                    <div class="home__sort">
+                    <label class="home__label">Сортирока <br> по цене
                         <select class="home__select-price">
                             <option class="home__option" value="">По умолчанию</option>
                             <option min="0" class="home__option" value="desc">По убыванию</option>
@@ -86,7 +87,7 @@
                         </select>
                     </label>
 
-                    <label class="home__label">по категориям
+                    <label class="home__label"><br>по категориям
                         <select class="home__select-category">
                             <option class="home__option" value="">По умолчанию</option>
                             <option min="0" class="home__option" value="run">Для бега</option>
@@ -95,7 +96,7 @@
                         </select>
                     </label>
 
-                    <label class="home__label">по полу
+                    <label class="home__label"><br>по полу
                         <select class="home__select-gender">
                             <option class="home__option" value="">По умолчанию</option>
                             <option min="0" class="home__option" value="men">Мужской</option>
@@ -103,7 +104,7 @@
                         </select>
                     </label>
 
-                    <label class="home__label">по бренду
+                    <label class="home__label"><br>по бренду
                         <select class="home__select-brand">
                             <option class="home__option" value="">По умолчанию</option>
                             <option min="0" class="home__option" value="GUCCI">GUCCI</option>
@@ -114,6 +115,7 @@
                             <option class="home__option" value="Ecco">Ecco</option>
                         </select>
                     </label>
+                    </div>
 
                     <div class="home__search">
                         <img class="home__search-icon" src="./src/assets/images/search.svg" alt="search">

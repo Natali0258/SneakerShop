@@ -4,7 +4,7 @@
     margin: 0 auto;
     padding: 20px auto;
     height: 100vh;
-    width: 40%;
+    width: 30%;
 
     &__form{
         display: flex;
@@ -51,4 +51,32 @@
             color: blue;
         }
     }
+}
+
+@media (max-width: 1200px){
+    .login{
+        width: 40%;
+    }
+}
+
+@media (max-width: 1024px){
+}
+
+@media (max-width: 992px){
+}
+
+@media (max-width: 768px){
+    .login{
+        width: 80%;
+    }
+}
+
+@media (max-width: 426px){
+    .login{
+        width: 100%;
+    }
+}
+
+@media (max-width: 376px){
+    
 }

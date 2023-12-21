@@ -53,7 +53,7 @@
             width: 40px;
             height: 40px;
         }
-        &-circle{
+        &-circle, &-round{
             width: 25px;
             height: 25px;
             border-radius: 50%;
@@ -101,6 +101,55 @@
         &-entry:hover,
         &-exit:hover{
             @include text ($montserratBold, 20px, 20px, blue);
+        }
+    }
+}
+
+@media (max-width: 1200px){
+    .header{
+        &__right{
+            column-gap: 80px;
+        }
+    }
+}
+
+@media (max-width: 1024px){
+    
+}
+
+@media (max-width: 992px){
+    
+}
+
+@media (max-width: 768px){
+    .header{
+        &__nav{
+            display: flex;
+            flex-direction: column;
+            align-items: start;
+            row-gap: 20px;
+        }
+        &__right{
+            align-self: center;
+            column-gap: 10px;
+            &-price{
+                padding-left: 10px;
+            }
+        }
+    }
+}
+
+@media (max-width: 426px){
+    
+}
+
+@media (max-width: 376px){
+    .header{
+        &__right{
+            flex-wrap: wrap;
+            &-next{
+                margin-left: 100px;
+            }
         }
     }
 }

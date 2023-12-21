@@ -94,3 +94,58 @@
         cursor: pointer;
     }
 }
+
+@media (max-width: 1200px){
+    .cart{
+        &__block{
+            width: 68%;
+        }
+        &__content{
+            width: 32%;
+        }
+    }
+}
+
+@media (max-width: 1024px){
+    .cart{
+        &__block{
+            width: 58%;
+        }
+        &__content{
+            width: 42%;
+        }
+    }
+}
+
+@media (max-width: 992px){
+}
+
+@media (max-width: 768px){
+    .cart{
+        &__block{
+            width: 42%;
+        }
+        &__content{
+            width: 58%;
+            padding: 20px 10px;
+        }
+        &__card{
+            padding: 20px 10px;
+        }
+    }
+}
+
+@media (max-width: 426px){
+    .cart{
+        &__block{
+            width: 32%;
+        }
+        &__content{
+            width: 68%;
+        }
+    }
+}
+
+@media (max-width: 376px){
+    
+}

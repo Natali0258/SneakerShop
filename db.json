@@ -14,15 +14,9 @@
     },
     {
       "email": "Olga@mail.ru",
-      "password": "$2a$10$7xRAxyWwtLu7CWWhAWMsYeDlWLCJV8hfzb2cD4.7lBlq8u1JPrmAi",
+      "password": "$2a$10$UQz3wrrqsbS4wM/qJw5JRuAwFaFkkenq1UGtPbwtJYG0nJXtbxGf6",
       "login": "Olga",
       "id": 3
-    },
-    {
-      "email": "Elena@mail.ru",
-      "password": "$2a$10$hGYcDycChV9Ycs904yyU6uoLg5PNho3EIegmkqyZYPd//RGmFrAai",
-      "login": "Elena",
-      "id": 4
     }
   ],
   "products": [

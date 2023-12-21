@@ -8,7 +8,9 @@ let cartCards=document.querySelector('.cart__cards');
 let cartDarkBlock=document.querySelector('.cart__block');
 let totalCart=document.querySelectorAll('.total');
 let percentCart=document.querySelector('.percent');
+let circleCart=document.querySelector('.header__right-circle');
 let countCart=document.querySelector('.count-cart');
+let roundFavorite=document.querySelector('.header__right-round');
 let countFavorite=document.querySelector('.count-favorite');
 
 export const setLocalStorage=()=>{
@@ -62,9 +64,22 @@ export const getCart=()=>{
     })
     percentCart.textContent=Math.ceil(cartData.reduce((acc,res)=>{
         return acc+res.price
-    },0)/100*5)
-    countCart.textContent=cartData.length;
-    countFavorite.textContent=favoriteData.length;
+    },0)/100*5) 
+
+    if(cartData.length === 0){
+        circleCart.style.display="none";
+    }else{
+        circleCart.style.display="flex";
+        countCart.textContent=cartData.length;
+    }
+    
+    if(favoriteData.length === 0){
+        roundFavorite.style.display="none";
+    }else{
+        roundFavorite.style.display="flex";
+        countFavorite.textContent=favoriteData.length;
+    }
+    
 
     
     let removeCartBtns=document.querySelectorAll('.removeCart');

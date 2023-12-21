@@ -7,15 +7,20 @@
         display: flex;
         justify-content: space-between;
         align-items: center;
-        margin: 40px 0 30px;
+        margin: 40px 0 40px;
     }
     &__title{
         @include text ($montserratBold, 30px, 16px, $black);
     }
+    &__sort{
+        display: flex;
+        justify-content: start;
+        align-items: center;
+        column-gap: 20px;
+    }
     &__label{
         display: flex;
         flex-direction: column;
-        height: 60px;
         @include text ($montserratReg, 20px, 30px, $black);
     }
     &__select{
@@ -40,6 +45,7 @@
         &-input{
             height: 50px;
             padding-left: 10px;
+            width: 180px;
             border: 1px solid transparent;
         }
     }
@@ -121,3 +127,50 @@
         }
     }
 }
+
+@media (max-width: 1200px){
+    .home{
+        &__top{
+            flex-direction: column;
+            row-gap: 20px;
+        }
+        &__card{
+            width: calc(33.333333% - 20px);
+        }
+        &__search{
+            &-input{
+                width: 220px;
+            }
+        } 
+    } 
+}
+
+// @media (max-width: 1024px){
+// }
+
+// @media (max-width: 992px){
+// }
+
+@media (max-width: 768px){
+    .home{
+        &__sort{
+            justify-content: center;
+            flex-wrap: wrap;
+        }
+        &__card{
+            width: calc(50% - 20px);
+        }
+    }
+}
+
+@media (max-width: 426px){
+    .home{
+        &__card{
+            width: 100%;
+        }
+    }
+}
+
+// @media (max-width: 376px){
+    
+// }
