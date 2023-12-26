@@ -572,6 +572,29 @@
   line-height: 18px;
   color: #191919;
 }
+.register__message {
+  display: none;
+}
+.register__message_active {
+  display: flex;
+  flex-direction: column;
+  row-gap: 10px;
+  font-family: "MontserratSemiBold", sans-serif;
+  font-size: 18px;
+  line-height: 18px;
+  color: red;
+}
+.register__message-text {
+  width: 300px;
+}
+.register__message-btn {
+  width: 300px;
+  padding: 10px;
+  background: grey;
+  color: white;
+  border-radius: 20px;
+  border: none;
+}
 .register__btn {
   width: 300px;
   height: 45px;
@@ -655,6 +678,29 @@
   font-size: 18px;
   line-height: 18px;
   color: #191919;
+}
+.login__message {
+  display: none;
+}
+.login__message_active {
+  display: flex;
+  flex-direction: column;
+  row-gap: 10px;
+  font-family: "MontserratSemiBold", sans-serif;
+  font-size: 18px;
+  line-height: 18px;
+  color: red;
+}
+.login__message-text {
+  width: 300px;
+}
+.login__message-btn {
+  width: 300px;
+  padding: 10px;
+  background: grey;
+  color: white;
+  border-radius: 20px;
+  border: none;
 }
 .login__btn {
   width: 300px;
